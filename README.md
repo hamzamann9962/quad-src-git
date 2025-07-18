@@ -53,9 +53,11 @@ ros2 launch quadruped_description display.launch.py
 ```
 🤖 Hardware Integration (quad_hardware branch)
 This branch deploys the robot on actual hardware (e.g., Jetson Nano, Raspberry Pi).
+(simulation time disabled in rpi but if u wanna try on your laptop u can run this 3 comands
+but on rpi just use the first comand to run the hardware lunch , i make it to make the rpi work smother withouth simulation)
 
 ```bash
-# Launch hardware interface (simulation time disabled in rpi but if u wanna try on your laptop u can run this 3 comand but on rpi just use the first comand to run the hardware lunch , i make it to make the rpi work smother withouth sumelation)
+# Launch hardware interface 
 ros2 launch quadruped_description hardware.launch.py
 ros2 launch quadruped_description gazebo.launch.py
 ros2 launch quadruped_description display.launch.py 
