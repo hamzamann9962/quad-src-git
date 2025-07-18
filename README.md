@@ -18,9 +18,9 @@ This repository contains ROS 2 packages for simulating and controlling a quadru
 ## 🚀 Installation
 
 ```bash
-cd ~/ros2_ws/src
+
 git clone https://github.com/hamzamann9962/quad-src-git.git
-cd ~/ros2_ws
+cd ~/quad-src-git
 colcon build --packages-select quad_description ik
 source install/setup.bash
 ```
@@ -55,8 +55,10 @@ ros2 launch quadruped_description display.launch.py
 This branch deploys the robot on actual hardware (e.g., Jetson Nano, Raspberry Pi).
 
 ```bash
-# Launch hardware interface (simulation time disabled)
+# Launch hardware interface (simulation time disabled in rpi but if u wanna try on your laptop u can run this 3 comand but on rpi just use the first comand to run the hardware lunch , i make it to make the rpi work smother withouth sumelation)
 ros2 launch quadruped_description hardware.launch.py
+ros2 launch quadruped_description gazebo.launch.py
+ros2 launch quadruped_description display.launch.py 
 
 # Run trajectory planning and execution
 ros2 run quadruped_description traj_bezier
