@@ -1,4 +1,4 @@
-# Quadruped Robot Simulation and Inverse Kinematics
+# robot dog v1 Simulation and Inverse Kinematics
 
 This repository contains ROS 2 packages for simulating and controlling a quadruped robot, including inverse kinematics, trajectory generation, and hardware integration.
 
